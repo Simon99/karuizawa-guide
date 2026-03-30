@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>輕井澤王子大飯店 東館 vs 西館 完全比較指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c5f2d 0%, #97c93d 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .hotel-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .hotel-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        
+        .hotel-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .hotel-content {
+            padding: 30px;
+        }
+        
+        .hotel-title {
+            font-size: 2em;
+            color: #2c5f2d;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #97c93d;
+            padding-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.1em;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .features {
+            margin-top: 20px;
+        }
+        
+        .feature-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-label {
+            font-weight: bold;
+            color: #2c5f2d;
+            display: inline-block;
+            width: 120px;
+        }
+        
+        .pros-cons {
+            margin-top: 25px;
+        }
+        
+        .pros, .cons {
+            margin-bottom: 15px;
+        }
+        
+        .pros h4 {
+            color: #2c5f2d;
+            margin-bottom: 10px;
+        }
+        
+        .cons h4 {
+            color: #c93d3d;
+            margin-bottom: 10px;
+        }
+        
+        .pros ul, .cons ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .pros li::before {
+            content: "✓ ";
+            color: #2c5f2d;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .cons li::before {
+            content: "✗ ";
+            color: #c93d3d;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .cottage-section {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .cottage-section h2 {
+            font-size: 2.2em;
+            color: #2c5f2d;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 3px solid #97c93d;
+            padding-bottom: 15px;
+        }
+        
+        .cottage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .cottage-card {
+            border: 2px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+            transition: border-color 0.3s;
+        }
+        
+        .cottage-card:hover {
+            border-color: #97c93d;
+        }
+        
+        .cottage-card h3 {
+            color: #2c5f2d;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .cottage-specs {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        
+        .cottage-specs p {
+            margin: 8px 0;
+            font-size: 0.95em;
+        }
+        
+        .recommendation {
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 100%);
+            border-left: 5px solid #ff9933;
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 8px;
+        }
+        
+        .recommendation h3 {
+            color: #cc6600;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .source-note {
+            font-size: 0.85em;
+            color: #999;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        
+        .source-note a {
+            color: #2c5f2d;
+            text-decoration: none;
+        }
+        
+        .source-note a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #333;
+            color: white;
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .cottage-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🏔️ 輕井澤王子大飯店</h1>
+        <p>東館 vs 西館 · 小木屋完全比較指南</p>
+    </header>
+
+    <div class="container">
+        <!-- 東館 vs 西館比較 -->
+        <div class="comparison-grid">
+            <!-- 東館 -->
+            <div class="hotel-card">
+                <img src="https://farm1.staticflickr.com/368/19449584795_78cac798a2_o.jpg" alt="輕井澤王子大飯店東館 - 森林温泉实拍">
+                <div class="hotel-content">
+                    <h2 class="hotel-title">🌲 東館</h2>
+                    <p class="tagline">"前往藝術森林，日常生活得到癒合"</p>
+                    
+                    <div class="features">
+                        <div class="feature-item">
+                            <span class="feature-label">核心特色</span>
+                            深度放鬆、SPA 療癒、藝術氛圍
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">主要設施</span>
+                            森林溫泉 & SPA THE FOREST PRINCE
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">特色空間</span>
+                            Guest Lounge SAKURA（高級休息區）
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">客房類型</span>
+                            本館為主，森林景觀房
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">房間面積</span>
+                            32-42㎡（森林雙床房～豪華雙床房）
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">購物便利度</span>
+                            步行約 10-15 分鐘到購物廣場
+                        </div>
+                    </div>
+                    
+                    <div class="pros-cons">
+                        <div class="pros">
+                            <h4>✓ 優點</h4>
+                            <ul>
+                                <li>頂級 SPA 設施，適合深度放鬆</li>
+                                <li>藝術森林氛圍，環境優雅</li>
+                                <li>森林景觀房視野極佳</li>
+                                <li>Guest Lounge 服務高級</li>
+                            </ul>
+                        </div>
+                        <div class="cons">
+                            <h4>✗ 缺點</h4>
+                            <ul>
+                                <li>離購物廣場較遠</li>
+                                <li>價格通常較西館稍高</li>
+                                <li>小木屋選擇較少</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 25px; padding-top: 20px; border-top: 2px solid #eee;">
+                        <h4 style="color: #2c5f2d; margin-bottom: 15px;">📷 游客实拍</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                            <img src="https://farm5.staticflickr.com/4782/40109803475_43b9810950_o.jpg" style="width: 100%; border-radius: 6px;" alt="森林温泉室内">
+                            <img src="https://farm1.staticflickr.com/801/26132098137_1488f6c3ab_o.jpg" style="width: 100%; border-radius: 6px;" alt="森林温泉景观">
+                        </div>
+                    </div>
+                    
+                    <div class="source-note">
+                        實拍來源：<a href="https://linshibi.com/?p=21091" target="_blank">林氏璧和美狐團 遊記</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 西館 -->
+            <div class="hotel-card">
+                <img src="https://live.staticflickr.com/65535/53702315695_9954ac0703_b.jpg" alt="輕井澤王子大飯店西館 - 小木屋实拍">
+                <div class="hotel-content">
+                    <h2 class="hotel-title">🏘️ 西館</h2>
+                    <p class="tagline">"經歷的森林，充滿回憶"</p>
+                    
+                    <div class="features">
+                        <div class="feature-item">
+                            <span class="feature-label">核心特色</span>
+                            購物便利、家庭度假、多樣選擇
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">主要設施</span>
+                            MOMIJI 紅葉溫泉
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">最大優勢</span>
+                            ⭐ 步行 2 分鐘到輕井澤王子購物廣場
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">客房類型</span>
+                            豪華露台雙床房 + 多種小木屋
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">房間面積</span>
+                            本館房 + 小木屋 47-75㎡
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">購物便利度</span>
+                            ⭐⭐⭐⭐⭐ 步行 2 分鐘
+                        </div>
+                    </div>
+                    
+                    <div class="pros-cons">
+                        <div class="pros">
+                            <h4>✓ 優點</h4>
+                            <ul>
+                                <li>購物超級方便，走路 2 分鐘</li>
+                                <li>小木屋選擇多，空間大</li>
+                                <li>豪華露台房有陽台</li>
+                                <li>性價比高，通常比東館便宜</li>
+                                <li>適合家庭/團體出遊</li>
+                            </ul>
+                        </div>
+                        <div class="cons">
+                            <h4>✗ 缺點</h4>
+                            <ul>
+                                <li>SPA 設施不如東館高端</li>
+                                <li>藝術氛圍較淡</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 25px; padding-top: 20px; border-top: 2px solid #eee;">
+                        <h4 style="color: #2c5f2d; margin-bottom: 15px;">📷 小木屋实拍</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                            <img src="https://live.staticflickr.com/65535/53702223149_f06bf5b389_b.jpg" style="width: 100%; border-radius: 6px;" alt="小木屋客厅">
+                            <img src="https://live.staticflickr.com/65535/53701752276_cbdd2b82bd_b.jpg" style="width: 100%; border-radius: 6px;" alt="小木屋卧室">
+                            <img src="https://live.staticflickr.com/65535/53702097183_b9ab01bd67_b.jpg" style="width: 100%; border-radius: 6px;" alt="小木屋浴室">
+                            <img src="https://live.staticflickr.com/65535/53701882436_40f10182d4_b.jpg" style="width: 100%; border-radius: 6px;" alt="夜晚的小木屋">
+                        </div>
+                    </div>
+                    
+                    <div class="source-note">
+                        實拍來源：<a href="https://tisshuang.com/blog/post/karuizawa" target="_blank">TISS玩味食尚 遊記</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 推薦建議 -->
+        <div class="recommendation">
+            <h3>🎯 推薦建議</h3>
+            <p><strong>選東館如果你：</strong></p>
+            <ul style="margin: 10px 0 20px 20px;">
+                <li>完全不購物，只想深度 SPA 放鬆</li>
+                <li>追求頂級服務和藝術氛圍</li>
+                <li>預算充裕，想要最好的體驗</li>
+            </ul>
+            
+            <p><strong>選西館如果你：</strong> ✅ <em>強烈推薦</em></p>
+            <ul style="margin: 10px 0 0 20px;">
+                <li>想購物 + 度假兼顧（輕井澤本來就是購物勝地！）</li>
+                <li>家庭出遊或團體旅行</li>
+                <li>喜歡獨立小木屋的私密感</li>
+                <li>注重性價比</li>
+            </ul>
+        </div>
+
+        <!-- 小木屋詳細比較 -->
+        <div class="cottage-section">
+            <h2>🏡 小木屋完全指南</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 30px;">
+                西館提供多種小木屋選擇，散布在森林中，獨棟獨立，適合家庭或團體
+            </p>
+            
+            <div class="cottage-grid">
+                <!-- 小木屋 A -->
+                <div class="cottage-card">
+                    <h3>小木屋 A</h3>
+                    <div class="cottage-specs">
+                        <p><strong>面積：</strong>47.4㎡</p>
+                        <p><strong>格局：</strong>2臥室 + 1客廳 + 1浴室</p>
+                        <p><strong>最多人數：</strong>4人</p>
+                        <p><strong>床型：</strong>105cm × 195cm</p>
+                    </div>
+                    <p><strong>適合：</strong>小家庭、情侶 2-4 人</p>
+                    <p style="margin-top: 10px; color: #2c5f2d;">💰 經濟實惠的入門選擇</p>
+                </div>
+
+                <!-- 小木屋 D -->
+                <div class="cottage-card">
+                    <h3>小木屋 D</h3>
+                    <div class="cottage-specs">
+                        <p><strong>面積：</strong>52㎡</p>
+                        <p><strong>格局：</strong>2臥室 + 1客廳 + <strong>2浴室</strong></p>
+                        <p><strong>最多人數：</strong>4人</p>
+                        <p><strong>床型：</strong>97cm × 195cm</p>
+                    </div>
+                    <p><strong>適合：</strong>4人家庭，需要 2 浴室</p>
+                    <p style="margin-top: 10px; color: #2c5f2d;">🚿 雙浴室不用排隊</p>
+                </div>
+
+                <!-- 小木屋 E -->
+                <div class="cottage-card" style="border: 3px solid #ff9933;">
+                    <h3>小木屋 E ⭐ 推薦</h3>
+                    <div class="cottage-specs" style="background: #fff5e6;">
+                        <p><strong>面積：</strong>74.8㎡（最大！）</p>
+                        <p><strong>格局：</strong>2臥室 + 1客廳 + 2浴室 + 1洗手間</p>
+                        <p><strong>最多人數：</strong><strong style="color: #ff9933;">6人</strong></p>
+                        <p><strong>床型：</strong>95cm × 195cm</p>
+                        <p><strong>備品：</strong>含浴袍、更齊全的配套</p>
+                    </div>
+                    <p><strong>適合：</strong>大家庭、三代同堂、好友團體</p>
+                    <p style="margin-top: 10px; color: #ff9933; font-weight: bold;">
+                        🏆 空間最大、設施最齊全、性價比最高
+                    </p>
+                </div>
+
+                <!-- 小木屋 F -->
+                <div class="cottage-card">
+                    <h3>小木屋 F</h3>
+                    <div class="cottage-specs">
+                        <p><strong>面積：</strong>待確認</p>
+                        <p><strong>格局：</strong>詳情請洽官網</p>
+                    </div>
+                    <p><strong>適合：</strong>需洽詢飯店確認規格</p>
+                </div>
+
+                <!-- 王子愛犬別墅 -->
+                <div class="cottage-card" style="border: 2px solid #97c93d;">
+                    <h3>🐕 王子愛犬別墅</h3>
+                    <div class="cottage-specs" style="background: #f0f8f0;">
+                        <p><strong>特色：</strong>可攜帶寵物狗入住</p>
+                        <p><strong>格局：</strong>依人數有不同房型</p>
+                        <p><strong>空間：</strong>起居室 + 臥室分離</p>
+                    </div>
+                    <p><strong>適合：</strong>帶毛小孩的家庭</p>
+                    <p style="margin-top: 10px; color: #2c5f2d;">
+                        🐾 與愛犬一起享受輕井澤森林
+                    </p>
+                </div>
+            </div>
+
+            <div class="recommendation" style="margin-top: 40px;">
+                <h3>🎯 小木屋選擇建議</h3>
+                <p><strong>2-4 人小家庭：</strong>小木屋 A（經濟）或 D（雙浴室）</p>
+                <p><strong>4-6 人大家庭/團體：</strong>小木屋 E ⭐ 最推薦</p>
+                <p><strong>帶寵物：</strong>王子愛犬別墅</p>
+                <p style="margin-top: 15px; padding: 15px; background: white; border-radius: 6px;">
+                    <strong>為什麼推薦小木屋 E？</strong><br>
+                    ✓ 74.8㎡ 超大空間，6 人住也不擁擠<br>
+                    ✓ 2 浴室 + 1 獨立洗手間，早上不用搶<br>
+                    ✓ 森林獨棟，隱私性極佳<br>
+                    ✓ 步行 2 分鐘到購物廣場，買完放回小木屋超輕鬆<br>
+                    ✓ 人均分攤比本館划算
+                </p>
+            </div>
+
+            <div class="source-note">
+                資料來源：<a href="https://www.princehotels.com/karuizawa-west/zh-hant/guest-rooms/" target="_blank">輕井澤王子大飯店西館官網 - 客房資訊</a>
+            </div>
+        </div>
+
+        <!-- 總結建議 -->
+        <div class="cottage-section" style="background: linear-gradient(135deg, #f0f8f0 0%, #e6f2e6 100%); border-left: 5px solid #2c5f2d;">
+            <h2 style="color: #2c5f2d;">📌 最終推薦</h2>
+            
+            <h3 style="color: #2c5f2d; margin-top: 30px;">🏆 最佳選擇：西館 + 小木屋 E</h3>
+            <div style="padding: 20px; background: white; border-radius: 8px; margin-top: 15px;">
+                <p><strong>理由：</strong></p>
+                <ol style="margin: 15px 0 15px 25px; line-height: 2;">
+                    <li><strong>購物天堂近在咫尺</strong> — 輕井澤王子購物廣場是必去景點，走路 2 分鐘超方便</li>
+                    <li><strong>森林獨棟私密性</strong> — 比本館安靜，有獨立空間感</li>
+                    <li><strong>空間最大最舒適</strong> — 74.8㎡，6 人住也寬敞</li>
+                    <li><strong>設施齊全不妥協</strong> — 2 浴室、浴袍、獨立洗手間</li>
+                    <li><strong>性價比無敵</strong> — 人均分攤比本館划算很多</li>
+                </ol>
+                
+                <p style="margin-top: 20px; padding: 15px; background: #fff5e6; border-left: 4px solid #ff9933; border-radius: 4px;">
+                    <strong>💡 完美行程：</strong>白天逛購物廣場 + 吃美食 → 下午回小木屋休息 → 晚上泡紅葉溫泉 → 森林中的獨棟別墅享受寧靜夜晚
+                </p>
+            </div>
+            
+            <h3 style="color: #2c5f2d; margin-top: 40px;">🌲 如果你堅持要東館...</h3>
+            <div style="padding: 20px; background: white; border-radius: 8px; margin-top: 15px;">
+                <p>那就選東館<strong>本館的森林景觀房</strong>，享受頂級 SPA THE FOREST PRINCE。</p>
+                <p style="margin-top: 10px;">但購物就得多走 10 分鐘，大包小包會比較累。</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 游客实拍图片画廊 -->
+    <div class="cottage-section">
+        <h2>📸 游客实拍图片画廊</h2>
+        <p style="text-align: center; margin-bottom: 30px; color: #666;">
+            来自台湾旅游博客的真实住宿体验照片（60+ 张）
+        </p>
+        
+        <!-- 东馆森林温泉区 -->
+        <div style="margin-bottom: 50px;">
+            <h3 style="color: #2c5f2d; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #97c93d;">
+                🌲 东馆 - 森林温泉 & SPA
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                <img src="https://farm1.staticflickr.com/368/19449584795_78cac798a2_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="森林温泉露天汤池">
+                <img src="https://farm5.staticflickr.com/4782/40109803475_43b9810950_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="森林温泉室内">
+                <img src="https://farm1.staticflickr.com/801/26132098137_1488f6c3ab_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="温泉景观">
+                <img src="https://farm5.staticflickr.com/4778/26132098297_e4973f6daf_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="温泉设施">
+                <img src="https://farm1.staticflickr.com/808/41002777511_68ed8c4f94_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="温泉更衣室">
+                <img src="https://farm5.staticflickr.com/4772/26132097877_5b62a9696c_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="森林温泉夜景">
+                <img src="https://farm1.staticflickr.com/819/26132097817_4f739d5c3a_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="温泉休息区">
+                <img src="https://farm1.staticflickr.com/815/26132095687_bdd5c1c7bf_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="温泉入口">
+            </div>
+            <p style="text-align: right; margin-top: 10px; font-size: 0.9em; color: #999;">
+                📷 图片来源：<a href="https://linshibi.com/?p=21091" target="_blank" style="color: #2c5f2d;">林氏璧和美狐團</a>
+            </p>
+        </div>
+        
+        <!-- 东馆房间区 -->
+        <div style="margin-bottom: 50px;">
+            <h3 style="color: #2c5f2d; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #97c93d;">
+                🏠 东馆 - 客房实拍
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                <img src="https://farm1.staticflickr.com/797/26132095797_5dd810114a_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="东馆房间">
+                <img src="https://farm5.staticflickr.com/4771/40109802535_e2ca993dfd_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="东馆客房内部">
+                <img src="https://farm5.staticflickr.com/4772/40109803635_44ecd42da1_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="东馆浴室">
+                <img src="https://farm1.staticflickr.com/811/41002778131_c3f7f05ac3_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="房间窗景">
+                <img src="https://farm5.staticflickr.com/4774/41002778041_3781849258_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="客房细节">
+                <img src="https://farm1.staticflickr.com/312/19443293212_abc3b05a58_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="森林景观房">
+            </div>
+            <p style="text-align: right; margin-top: 10px; font-size: 0.9em; color: #999;">
+                📷 图片来源：<a href="https://linshibi.com/?p=21091" target="_blank" style="color: #2c5f2d;">林氏璧和美狐團</a>
+            </p>
+        </div>
+        
+        <!-- 西馆小木屋外观 -->
+        <div style="margin-bottom: 50px;">
+            <h3 style="color: #2c5f2d; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #97c93d;">
+                🏡 西馆 - 小木屋外观 & 环境
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                <img src="https://live.staticflickr.com/65535/53702315695_9954ac0703_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="小木屋外观">
+                <img src="https://live.staticflickr.com/65535/53701882436_40f10182d4_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="夜晚的小木屋">
+                <img src="https://live.staticflickr.com/65535/53701752271_bc02c59ea3_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="小木屋周边环境">
+                <img src="https://live.staticflickr.com/65535/53702092434_e1f60d514f_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="森林中的小木屋">
+                <img src="https://live.staticflickr.com/65535/53702092424_d223fd292a_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="小木屋入口">
+                <img src="https://live.staticflickr.com/65535/53700990042_d460340cc2_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="小木屋门口">
+            </div>
+            <p style="text-align: right; margin-top: 10px; font-size: 0.9em; color: #999;">
+                📷 图片来源：<a href="https://tisshuang.com/blog/post/karuizawa" target="_blank" style="color: #2c5f2d;">TISS玩味食尚</a>
+            </p>
+        </div>
+        
+        <!-- 西馆小木屋内部 -->
+        <div style="margin-bottom: 50px;">
+            <h3 style="color: #2c5f2d; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #97c93d;">
+                🛋️ 西馆 - 小木屋内部空间
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                <img src="https://live.staticflickr.com/65535/53702223149_f06bf5b389_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="小木屋客厅">
+                <img src="https://live.staticflickr.com/65535/53701752276_cbdd2b82bd_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="小木屋卧室">
+                <img src="https://live.staticflickr.com/65535/53702097183_b9ab01bd67_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="小木屋浴室">
+                <img src="https://live.staticflickr.com/65535/53701882646_89a9b28f9a_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="客厅细节">
+                <img src="https://live.staticflickr.com/65535/53701752296_7a18fe0a63_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="卧室窗景">
+                <img src="https://live.staticflickr.com/65535/53702097138_bc8638e60e_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="小木屋厨房">
+                <img src="https://live.staticflickr.com/65535/53701882621_59ac7fdd9a_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="室内装潢">
+                <img src="https://live.staticflickr.com/65535/53701752236_d6bab6ae75_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="起居空间">
+            </div>
+            <p style="text-align: right; margin-top: 10px; font-size: 0.9em; color: #999;">
+                📷 图片来源：<a href="https://tisshuang.com/blog/post/karuizawa" target="_blank" style="color: #2c5f2d;">TISS玩味食尚</a>
+            </p>
+        </div>
+        
+        <!-- 西馆红叶温泉 -->
+        <div style="margin-bottom: 50px;">
+            <h3 style="color: #2c5f2d; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #97c93d;">
+                ♨️ 西馆 - MOMIJI 红叶温泉
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                <img src="https://live.staticflickr.com/65535/53700990157_8d6cfa68d7_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="红叶温泉外观">
+                <img src="https://live.staticflickr.com/65535/53700990147_7c322244b2_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="温泉入口">
+                <img src="https://live.staticflickr.com/65535/53701882561_7b989ae3c2_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="温泉内部">
+                <img src="https://live.staticflickr.com/65535/53700990082_7cc3e63d77_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="温泉休息区">
+            </div>
+            <p style="text-align: right; margin-top: 10px; font-size: 0.9em; color: #999;">
+                📷 图片来源：<a href="https://tisshuang.com/blog/post/karuizawa" target="_blank" style="color: #2c5f2d;">TISS玩味食尚</a>
+            </p>
+        </div>
+        
+        <!-- 设施与环境 -->
+        <div style="margin-bottom: 50px;">
+            <h3 style="color: #2c5f2d; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #97c93d;">
+                🌳 周边环境 & 设施
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                <img src="https://farm1.staticflickr.com/799/27132060948_61773ea75a_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="饭店大堂">
+                <img src="https://farm1.staticflickr.com/804/27132061088_167ee4c0f8_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="接待处">
+                <img src="https://farm1.staticflickr.com/792/27132061258_c520ed5f88_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="休息区">
+                <img src="https://farm1.staticflickr.com/339/19262031170_f662c83e37_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="森林步道">
+                <img src="https://farm5.staticflickr.com/4784/41002775031_0742b6985f_o.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="周边环境">
+                <img src="https://live.staticflickr.com/65535/53702097098_aeb2c654ac_b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="购物广场">
+            </div>
+            <p style="text-align: right; margin-top: 10px; font-size: 0.9em; color: #999;">
+                📷 图片来源：多位旅游博主
+            </p>
+        </div>
+        
+        <!-- 小環妞实拍 -->
+        <div style="margin-bottom: 50px;">
+            <h3 style="color: #2c5f2d; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #97c93d;">
+                🏨 王子饭店 - 更多实拍（小環妞幸福足跡）
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                <img src="https://wkitty.tw/wp-content/uploads/2018/02/1520061158-1167610aa17b0813233fe82d99403e41.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="王子饭店外观">
+                <img src="https://wkitty.tw/wp-content/uploads/2018/02/1520053721-8cda81fc7ad906927144235dda5fdf15.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="饭店入口">
+                <img src="https://wkitty.tw/wp-content/uploads/2018/02/1520053725-f3ccdd27d2000e3f9255a7e3e2c48800.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="大堂接待">
+                <img src="https://wkitty.tw/wp-content/uploads/2018/02/1520053723-30e62fddc14c05988b44e7c02788e187.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="客房走廊">
+                <img src="https://wkitty.tw/wp-content/uploads/2018/02/1520053728-799bad5a3b514f096e69bbc4a7896cd9.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="房间内部">
+                <img src="https://wkitty.tw/wp-content/uploads/2018/02/1520053727-156005c5baf40ff51a327f1c34f2975b.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="窗外景观">
+                <img src="https://wkitty.tw/wp-content/uploads/2018/02/1520053715-18e2999891374a475d0687ca9f989d83.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="卫浴空间">
+                <img src="https://wkitty.tw/wp-content/uploads/2018/02/1520053730-032b2cc936860b03048302d991c3498f.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="房间细节">
+                <img src="https://wkitty.tw/wp-content/uploads/2018/02/1520053729-d0096ec6c83575373e3a21d129ff8fef.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="备品">
+                <img src="https://wkitty.tw/wp-content/uploads/2018/02/1520053718-fe5df232cafa4c4e0f1a0294418e5660.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="室内装潢">
+                <img src="https://wkitty.tw/wp-content/uploads/2018/02/1520053724-ae566253288191ce5d879e51dae1d8c3.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="夜景">
+            </div>
+            <p style="text-align: right; margin-top: 10px; font-size: 0.9em; color: #999;">
+                📷 图片来源：<a href="https://wkitty.tw/blog/post/karuizawa-good-hotel" target="_blank" style="color: #2c5f2d;">小環妞幸福足跡</a>
+            </p>
+        </div>
+        
+        <!-- 吳大爺的小木屋D实拍 -->
+        <div style="margin-bottom: 50px;">
+            <h3 style="color: #2c5f2d; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #97c93d;">
+                🏠 小木屋D实拍（吳大爺's 簡單吃喝過生活）
+            </h3>
+            <p style="color: #666; margin-bottom: 15px;">
+                两对夫妻 + 1小孩的选择：2房间 + 2套卫浴，很适合家庭或朋友同行
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                <img src="https://pimg.1px.tw/viake/1536482904-1332938655.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="小木屋D客厅">
+                <img src="https://pimg.1px.tw/viake/1536482908-2545354620.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="客厅茶具">
+                <img src="https://pimg.1px.tw/viake/1536482907-2937154433.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="双床卧室">
+                <img src="https://pimg.1px.tw/viake/1536482911-1534994431.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="房间梳妆台">
+                <img src="https://pimg.1px.tw/viake/1536482909-2661109558.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="房间空间">
+                <img src="https://pimg.1px.tw/viake/1536482913-76980623.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="浴室备品">
+                <img src="https://pimg.1px.tw/viake/1536482914-756788234.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="浴室">
+                <img src="https://pimg.1px.tw/viake/1536482915-1866724808.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="小木屋外观">
+                <img src="https://pimg.1px.tw/viake/1536482925-4209054429.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="接驳车">
+                <img src="https://pimg.1px.tw/viake/1536482944-2202863771.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="森林环境">
+                <img src="https://pimg.1px.tw/viake/1536482953-2041268168.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="窗外美景">
+            </div>
+            <p style="text-align: right; margin-top: 10px; font-size: 0.9em; color: #999;">
+                📷 图片来源：<a href="https://viake.pixnet.net/blog/posts/8226193501" target="_blank" style="color: #2c5f2d;">吳大爺's 簡單吃喝過生活</a>
+            </p>
+        </div>
+        
+        <!-- 魔女享樂風的小木屋E实拍 -->
+        <div style="margin-bottom: 50px;">
+            <h3 style="color: #2c5f2d; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #97c93d;">
+                🏡 小木屋E实拍（魔女享樂風）
+            </h3>
+            <p style="color: #666; margin-bottom: 15px;">
+                2024年最新体验：4人住6人房（小木屋E），空间超大舒适！
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                <img src="https://pimg.1px.tw/yuhhuey1/1718154949-2277372218-g.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="小木屋E外观">
+                <img src="https://pimg.1px.tw/yuhhuey1/1718154949-2758462157-g.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="988号小木屋">
+                <img src="https://pimg.1px.tw/yuhhuey1/1718154949-165115593-g.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="客厅空间">
+                <img src="https://pimg.1px.tw/yuhhuey1/1718154949-3561366295-g.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="窗外绿意">
+                <img src="https://pimg.1px.tw/yuhhuey1/1718154948-1853977759-g.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="990号小木屋">
+                <img src="https://pimg.1px.tw/yuhhuey1/1718154949-3276367937-g.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="小木屋间距">
+                <img src="https://pimg.1px.tw/yuhhuey1/1718154955-2132108949-g.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="步行到大厅">
+                <img src="https://pimg.1px.tw/yuhhuey1/1718154956-1373961469-g.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer;" alt="园区环境">
+            </div>
+            <p style="text-align: right; margin-top: 10px; font-size: 0.9em; color: #999;">
+                📷 图片来源：<a href="https://yuhhuey1.pixnet.net/blog/posts/12226990741" target="_blank" style="color: #2c5f2d;">魔女享樂風</a>
+            </p>
+        </div>
+        
+        <div style="background: #f0f8f0; padding: 30px; border-radius: 12px; border-left: 5px solid #2c5f2d; margin-top: 40px;">
+            <h4 style="color: #2c5f2d; margin-bottom: 15px;">💡 看图小贴士</h4>
+            <ul style="color: #666; line-height: 2;">
+                <li><strong>东馆森林温泉</strong>是最大卖点，露天汤池可以看森林景观</li>
+                <li><strong>西馆小木屋</strong>散布在森林中，每栋都是独立空间</li>
+                <li><strong>红叶温泉</strong>虽然不如东馆高级，但也很舒适</li>
+                <li><strong>购物广场</strong>就在西馆旁边，步行2分钟</li>
+                <li>照片都是游客实拍，比官网更真实！</li>
+                <li><strong>现在有 5 位博主的实拍</strong>：林氏璧、TISS、小環妞、吳大爺、魔女享樂風</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 参考游记区块 -->
+    <div class="cottage-section" style="background: #f9f9f9;">
+        <h2>📚 更多实拍游记参考</h2>
+        <p style="text-align: center; margin-bottom: 30px; color: #666;">
+            以下是台湾旅游博客的实际住宿体验分享
+        </p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+            <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #2c5f2d; margin-bottom: 10px;">林氏璧和美狐團</h3>
+                <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">详细介绍东馆森林温泉体验</p>
+                <a href="https://linshibi.com/?p=21091" target="_blank" style="color: #2c5f2d; text-decoration: none;">👉 查看游记</a>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #2c5f2d; margin-bottom: 10px;">跟著雪倫愛出走</h3>
+                <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">西馆小木屋住宿推荐与交通攻略</p>
+                <a href="https://freelikethewind-blog.com/" target="_blank" style="color: #2c5f2d; text-decoration: none;">👉 查看游记</a>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #2c5f2d; margin-bottom: 10px;">TISS玩味食尚</h3>
+                <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">小木屋住宿评价 + 滑雪场体验</p>
+                <a href="https://permio.com.tw/" target="_blank" style="color: #2c5f2d; text-decoration: none;">👉 查看游记</a>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #2c5f2d; margin-bottom: 10px;">小環妞幸福足跡</h3>
+                <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">东西馆、The Prince、别墅完整比较</p>
+                <a href="https://raarshare.tw/" target="_blank" style="color: #2c5f2d; text-decoration: none;">👉 查看游记</a>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #2c5f2d; margin-bottom: 10px;">娜塔蝦的滑雪食旅手記</h3>
+                <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">西馆住宿心得 + 日式早餐体验</p>
+                <a href="https://natasha-travel.com/" target="_blank" style="color: #2c5f2d; text-decoration: none;">👉 查看游记</a>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #2c5f2d; margin-bottom: 10px;">福寶媽衝日本</h3>
+                <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">西馆全新改装 + outlet 购物攻略</p>
+                <a href="https://fukutin.tw/" target="_blank" style="color: #2c5f2d; text-decoration: none;">👉 查看游记</a>
+            </div>
+        </div>
+        
+        <div style="margin-top: 30px; padding: 20px; background: white; border-radius: 8px; border-left: 4px solid #2c5f2d;">
+            <p style="color: #666;">
+                <strong>💡 提示：</strong>建议出发前多看几篇游记，了解不同季节的实际体验。
+                每个博客都有详细的房间照片、温泉实拍、餐厅评价等。
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>📍 輕井澤王子大飯店</p>
+        <p>389-0193 長野縣北佐久郡輕井澤町輕井澤</p>
+        <p style="margin-top: 15px; font-size: 0.9em;">
+            資料來源：官方網站 | 
+            <a href="https://www.princehotels.com/karuizawa-east/zh-hant/" style="color: #97c93d;" target="_blank">東館</a> | 
+            <a href="https://www.princehotels.com/karuizawa-west/zh-hant/" style="color: #97c93d;" target="_blank">西館</a>
+        </p>
+        <p style="margin-top: 20px; opacity: 0.7;">
+            本指南由 AI 助手整理 · 2026-03-31
+        </p>
+    </footer>
+</body>
+</html>
